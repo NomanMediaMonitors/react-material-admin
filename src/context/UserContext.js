@@ -47,7 +47,6 @@ function useUserDispatch() {
 
 export { UserProvider, useUserState, useUserDispatch, loginUser, signOut };
 
-// ###########################################################
 
 function loginUser(dispatch, login, password, history, setIsLoading, setError) {
   setError(false);

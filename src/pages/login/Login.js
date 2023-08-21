@@ -12,20 +12,16 @@ import {
 import { withRouter } from "react-router-dom";
 import classnames from "classnames";
 
-// styles
 import useStyles from "./styles";
 
-// logo
 import logo from "./logo.svg";
 import google from "../../images/google.svg";
 
-// context
 import { useUserDispatch, loginUser } from "../../context/UserContext";
 
 function Login(props) {
   var classes = useStyles();
 
-  // global
   var userDispatch = useUserDispatch();
 
   // local
@@ -33,8 +29,8 @@ function Login(props) {
   var [error, setError] = useState(null);
   var [activeTabId, setActiveTabId] = useState(0);
   var [nameValue, setNameValue] = useState("");
-  var [loginValue, setLoginValue] = useState("admin@flatlogic.com");
-  var [passwordValue, setPasswordValue] = useState("password");
+  var [loginValue, setLoginValue] = useState("admin");
+  var [passwordValue, setPasswordValue] = useState("admin");
 
   return (
     <Grid container className={classes.container}>
